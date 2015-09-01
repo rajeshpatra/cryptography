@@ -15,6 +15,8 @@ class Cryptography
 	end
 
 	def encrypt(string)
+
+		# .split("") here ("") is the argument so it splits every letter
 		letters = string.split("")
 
 		# .collect method works and stores to results saving to write results = [] and using .each metod.
