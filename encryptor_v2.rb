@@ -3,15 +3,15 @@ class Cryptography
 
 		# .to_a it stores in an array
 		# ('a'..'z') it's the format in ruby to write out between them
-		characters = ('a'..'z').to_a
+		characters = (' '..'z').to_a
 		#.rotate it shuffles after given characters
 		rotated_characters = characters.rotate(rotation)
 		# .zip for like zip works, it binds. And Hash[] it stores them.
 		Hash[characters.zip(rotated_characters)]
 	end
 
-	def encrypt_letter(letter)
-		rotation = 13
+	# so encrypt_letter takes two arguments and do the same when calling it
+	def encrypt_letter(letter,rotation)
 		cipher_for_rotation = cipher(rotation)
 		cipher_for_rotation[letter]
 	end
