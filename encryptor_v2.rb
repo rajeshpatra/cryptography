@@ -16,7 +16,7 @@ class Cryptography
 		cipher_for_rotation[letter]
 	end
 
-	def encrypt(string)
+	def encrypt(string,rotation)
 		# .split("") here ("") is the argument so it splits every letter
 		letters = string.split("")
    		
