@@ -20,9 +20,10 @@ class Cryptography
 		# .split("") here ("") is the argument so it splits every letter
 		letters = string.split("")
    		
-   		# .collect method works and stores to results saving to write results = [] and using .each metod.
+   		# .collect method works and stores to results saving to write results = [] and using .each method.
+   		# cipher_for_rotation = cipher(rotation)
 		results = letters.collect do |letter|
-			encrypted_letter = encrypt_letter(letter)
+			encrypted_letter = encrypt_letter(letter,rotation)
 		end
 
 		# .join to form a string from array
